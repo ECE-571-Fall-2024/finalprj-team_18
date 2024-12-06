@@ -1,0 +1,91 @@
+# Compile of APBslave.sv was successful with warnings.
+# Compile of TB.sv was successful.
+# Compile of APBDesign.sv was successful.
+# Compile of APBONESlave.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of APBinterface.sv was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:25 on Dec 05,2024
+# vlog -reportprogress 300 -lint APBDesign.sv "+acc" 
+# -- Compiling module apb_master_top
+# -- Importing package apb_pkg
+# 
+# Top level modules:
+# 	apb_master_top
+# End time: 23:06:25 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:25 on Dec 05,2024
+# vlog -reportprogress 300 -lint APBONESlave.sv "+acc" 
+# -- Compiling module one_slave
+# -- Importing package apb_pkg
+# 
+# Top level modules:
+# 	one_slave
+# End time: 23:06:26 on Dec 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:26 on Dec 05,2024
+# vlog -reportprogress 300 -lint TB.sv "+acc" 
+# -- Compiling module tb_one_slave
+# 
+# Top level modules:
+# 	tb_one_slave
+# End time: 23:06:26 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:26 on Dec 05,2024
+# vlog -reportprogress 300 -lint APBSlave.sv "+acc" 
+# -- Compiling module apb_slave_top
+# -- Importing package apb_pkg
+# ** Warning: APBSlave.sv(77): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	apb_slave_top
+# End time: 23:06:26 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:26 on Dec 05,2024
+# vlog -reportprogress 300 -lint Package.sv "+acc" 
+# -- Compiling package apb_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:06:27 on Dec 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 23:06:27 on Dec 05,2024
+# vlog -reportprogress 300 -lint APBinterface.sv "+acc" 
+# ** Warning: APBinterface.sv(2): (vlog-13233) Design unit "APBinterface_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+# -- Compiling package APBinterface_sv_unit
+# -- Importing package apb_pkg
+# -- Compiling interface apb_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 23:06:27 on Dec 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim work.tb_one_slave 
+# Start time: 23:06:27 on Dec 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_master_top(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_slave_top(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb_one_slave(fast)
+# Loading work.apb_pkg(fast)
+# Loading work.one_slave(fast)
+# Loading work.apb_master_top(fast)
+# Loading work.apb_slave_top(fast)
+# ** Note: $stop    : TB.sv(90)
+#    Time: 890 ns  Iteration: 1  Instance: /tb_one_slave
+# Break in Module tb_one_slave at TB.sv line 90
+# End time: 00:01:03 on Dec 06,2024, Elapsed time: 0:54:36
+# Errors: 0, Warnings: 10
